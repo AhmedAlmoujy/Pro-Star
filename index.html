@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="بروستار - وكالة تسويق رقمي وتصميم إبداعي في المملكة العربية السعودية. خدمات UI/UX، تصميم جرافيك، برمجة، سوشيال ميديا، SEO، موشن جرافيك والمزيد.">
+  <meta name="keywords" content="بروستار, تسويق رقمي, تصميم, برمجة, سوشيال ميديا, السعودية, SEO, موشن جرافيك">
+  <meta name="author" content="Pro-Star KSA">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Pro-Star | نجمك حين يضيع الاتجاه">
+  <meta property="og:description" content="وكالة تسويق رقمي وتصميم إبداعي متكاملة في المملكة العربية السعودية">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_SA">
+
+  <title>Pro-Star | نجمك حين يضيع الاتجاه</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">تخطي إلى المحتوى الرئيسي</a>
+
+  <!-- ════════════════════════════════════════
+       NAVBAR
+       ════════════════════════════════════════ -->
+  <header class="navbar" role="banner">
+    <div class="navbar__inner">
+      <a href="#hero" class="navbar__logo" aria-label="Pro-Star الرئيسية">
+        <img src="assets/logo.png" alt="Pro-Star Logo" width="44" height="44">
+        <span class="navbar__logo-text">Pro-Star</span>
+      </a>
+
+      <nav class="navbar__nav" role="navigation" aria-label="القائمة الرئيسية">
+        <a href="#services" class="navbar__link" aria-label="خدماتنا">خدماتنا</a>
+        <a href="#about" class="navbar__link" aria-label="من نحن">من نحن</a>
+        <a href="#portfolio" class="navbar__link" aria-label="أعمالنا">أعمالنا</a>
+        <a href="#contact" class="navbar__link" aria-label="تواصل معنا">تواصل معنا</a>
+        <a href="#contact" class="navbar__cta" aria-label="ابدأ مشروعك">
+          🚀 ابدأ مشروعك
+        </a>
+      </nav>
+
+      <button class="navbar__hamburger" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="navbar__mobile-overlay" aria-hidden="true"></div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ════════════════════════════════════════
+         HERO SECTION
+         ════════════════════════════════════════ -->
+    <section id="hero" class="hero" aria-label="القسم الرئيسي">
+      <!-- Starfield Canvas -->
+      <canvas id="starfield" class="hero__starfield" aria-hidden="true"></canvas>
+
+      <!-- Nebula Effects -->
+      <div class="hero__nebula" aria-hidden="true"></div>
+
+      <!-- Orbit Rings -->
+      <div class="hero__orbits" aria-hidden="true">
+        <div class="hero__orbit-ring"></div>
+        <div class="hero__orbit-ring"></div>
+        <div class="hero__orbit-ring"></div>
+        <div class="hero__orbit-dot"></div>
+        <div class="hero__orbit-dot"></div>
+      </div>
+
+      <!-- Astronaut SVG -->
+      <div class="hero__astronaut" aria-hidden="true">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <!-- Helmet -->
+          <ellipse cx="100" cy="70" rx="45" ry="50" fill="none" stroke="rgba(232,98,28,0.3)" stroke-width="2"/>
+          <ellipse cx="100" cy="70" rx="35" ry="40" fill="none" stroke="rgba(232,98,28,0.15)" stroke-width="1"/>
+          <!-- Visor -->
+          <ellipse cx="100" cy="68" rx="28" ry="30" fill="rgba(232,98,28,0.05)" stroke="rgba(232,98,28,0.2)" stroke-width="1.5"/>
+          <!-- Star in visor -->
+          <path d="M100 55 L103 65 L113 65 L105 71 L108 81 L100 75 L92 81 L95 71 L87 65 L97 65 Z" fill="rgba(232,98,28,0.3)"/>
+          <!-- Body -->
+          <rect x="75" y="115" width="50" height="55" rx="15" fill="none" stroke="rgba(232,98,28,0.2)" stroke-width="2"/>
+          <!-- Backpack -->
+          <rect x="60" y="120" width="15" height="40" rx="5" fill="none" stroke="rgba(232,98,28,0.15)" stroke-width="1"/>
+          <!-- Arms -->
+          <line x1="75" y1="130" x2="45" y2="120" stroke="rgba(232,98,28,0.2)" stroke-width="2" stroke-linecap="round"/>
+          <line x1="125" y1="130" x2="155" y2="145" stroke="rgba(232,98,28,0.2)" stroke-width="2" stroke-linecap="round"/>
+          <!-- Legs -->
+          <line x1="88" y1="170" x2="80" y2="195" stroke="rgba(232,98,28,0.2)" stroke-width="2" stroke-linecap="round"/>
+          <line x1="112" y1="170" x2="120" y2="195" stroke="rgba(232,98,28,0.2)" stroke-width="2" stroke-linecap="round"/>
+          <!-- Connection line (tether) -->
+          <path d="M60 140 Q30 100 40 60" fill="none" stroke="rgba(232,98,28,0.1)" stroke-width="1" stroke-dasharray="4,4"/>
+        </svg>
+      </div>
+
+      <!-- Hero Content -->
+      <div class="hero__content">
+        <div class="hero__badge reveal reveal--up">
+          <span class="hero__badge-dot"></span>
+          وكالة تسويق رقمي متكاملة
+        </div>
+
+        <h1 class="hero__title reveal reveal--up reveal-delay-1">
+          نجمك حين<br>
+          <span class="hero__title-accent">يضيع الاتجاه</span>
+        </h1>
+
+        <p class="hero__description reveal reveal--up reveal-delay-2">
+          نصنع لعلامتك التجارية هوية رقمية استثنائية تنطلق بك نحو آفاق جديدة.
+          من التصميم إلى البرمجة، من المحتوى إلى التسويق — نحن شريكك في كل خطوة.
+        </p>
+
+        <div class="hero__actions reveal reveal--up reveal-delay-3">
+          <a href="#contact" class="btn btn--primary">
+            ابدأ رحلتك معنا
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#services" class="btn btn--ghost">
+            استكشف خدماتنا
+          </a>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="hero__scroll" aria-hidden="true">
+        <div class="hero__scroll-mouse"></div>
+        <span>اكتشف المزيد</span>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+         SERVICES SECTION
+         ════════════════════════════════════════ -->
+    <section id="services" class="section section--alt services" aria-label="خدماتنا">
+      <div class="container">
+        <div class="section-title reveal reveal--up">
+          <h2>خدماتنا</h2>
+          <p class="section-subtitle">نقدم مجموعة متكاملة من الخدمات الرقمية لنأخذ علامتك التجارية إلى النجوم</p>
+        </div>
+
+        <div class="services__grid">
+
+          <!-- Service 1: UI/UX -->
+          <article class="service-card reveal reveal--up reveal-delay-1" id="service-uiux">
+            <span class="service-card__number" aria-hidden="true">01</span>
+            <div class="service-card__media">
+              <img src="assets/media/banner-ui.gif" alt="تصميم واجهات المستخدم" loading="lazy" onerror="this.style.display='none'">
+              <div class="service-card__media-overlay"></div>
+            </div>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+            </div>
+            <h3 class="service-card__title">تصميم UI/UX</h3>
+            <p class="service-card__description">نصمم واجهات مستخدم بديهية وتجارب رقمية استثنائية تحول الزوار إلى عملاء مخلصين.</p>
+            <span class="service-card__link">
+              اعرف المزيد
+              <svg class="service-card__link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </span>
+          </article>
+
+          <!-- Service 2: SEO -->
+          <article class="service-card reveal reveal--up reveal-delay-2" id="service-seo">
+            <span class="service-card__number" aria-hidden="true">02</span>
+            <div class="service-card__media">
+              <img src="assets/media/banner-seo.gif" alt="تحسين محركات البحث" loading="lazy" onerror="this.style.display='none'">
+              <div class="service-card__media-overlay"></div>
+            </div>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <h3 class="service-card__title">تحسين محركات البحث SEO</h3>
+            <p class="service-card__description">نضع موقعك في صدارة نتائج البحث عبر استراتيجيات SEO متقدمة ومحتوى محسّن.</p>
+            <span class="service-card__link">
+              اعرف المزيد
+              <svg class="service-card__link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </span>
+          </article>
+
+          <!-- Service 3: Graphic Design -->
+          <article class="service-card reveal reveal--up reveal-delay-3" id="service-graphic">
+            <span class="service-card__number" aria-hidden="true">03</span>
+            <div class="service-card__media">
+              <img src="assets/media/banner-social1.gif" alt="تصميم جرافيك" loading="lazy" onerror="this.style.display='none'">
+              <div class="service-card__media-overlay"></div>
+            </div>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 class="service-card__title">تصميم جرافيك</h3>
+            <p class="service-card__description">هويات بصرية مميزة وتصاميم إبداعية تعكس شخصية علامتك التجارية بأسلوب احترافي.</p>
+            <span class="service-card__link">
+              اعرف المزيد
+              <svg class="service-card__link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </span>
+          </article>
+
+          <!-- Service 4: Motion -->
+          <article class="service-card reveal reveal--up reveal-delay-4" id="service-motion">
+            <span class="service-card__number" aria-hidden="true">04</span>
+            <div class="service-card__media">
+              <img src="assets/media/banner-motion.gif" alt="موشن جرافيك" loading="lazy" onerror="this.style.display='none'">
+              <div class="service-card__media-overlay"></div>
+            </div>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </div>
+            <h3 class="service-card__title">موشن جرافيك</h3>
+            <p class="service-card__description">فيديوهات متحركة احترافية تروي قصة علامتك التجارية بأسلوب مرئي جذاب ومؤثر.</p>
+            <span class="service-card__link">
+              اعرف المزيد
+              <svg class="service-card__link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </span>
+          </article>
+
+          <!-- Service 5: Programming -->
+          <article class="service-card reveal reveal--up reveal-delay-5" id="service-programming">
+            <span class="service-card__number" aria-hidden="true">05</span>
+            <div class="service-card__media">
+              <img src="assets/media/banner-ui.gif" alt="برمجة وتطوير" loading="lazy" onerror="this.style.display='none'">
+              <div class="service-card__media-overlay"></div>
+            </div>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="14" y1="4" x2="10" y2="20"/></svg>
+            </div>
+            <h3 class="service-card__title">البرمجة والتطوير</h3>
+            <p class="service-card__description">مواقع وتطبيقات ويب متطورة بأحدث التقنيات مع أداء عالٍ وتجربة مستخدم سلسة.</p>
+            <span class="service-card__link">
+              اعرف المزيد
+              <svg class="service-card__link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </span>
+          </article>
+
+          <!-- Service 6: Content -->
+          <article class="service-card reveal reveal--up reveal-delay-6" id="service-content">
+            <span class="service-card__number" aria-hidden="true">06</span>
+            <div class="service-card__media">
+              <img src="assets/media/banner-content.gif" alt="صناعة المحتوى" loading="lazy" onerror="this.style.display='none'">
+              <div class="service-card__media-overlay"></div>
+            </div>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            </div>
+            <h3 class="service-card__title">صناعة المحتوى</h3>
+            <p class="service-card__description">محتوى إبداعي ومؤثر يبني علاقة حقيقية بين علامتك وجمهورك المستهدف.</p>
+            <span class="service-card__link">
+              اعرف المزيد
+              <svg class="service-card__link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </span>
+          </article>
+
+          <!-- Service 7: Media Buyer -->
+          <article class="service-card reveal reveal--up reveal-delay-7" id="service-mediabuyer">
+            <span class="service-card__number" aria-hidden="true">07</span>
+            <div class="service-card__media">
+              <img src="assets/media/banner-media.gif" alt="شراء الإعلانات" loading="lazy" onerror="this.style.display='none'">
+              <div class="service-card__media-overlay"></div>
+            </div>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+            </div>
+            <h3 class="service-card__title">ميديا باير</h3>
+            <p class="service-card__description">إدارة حملات إعلانية ذكية تحقق أقصى عائد على الاستثمار بأقل تكلفة ممكنة.</p>
+            <span class="service-card__link">
+              اعرف المزيد
+              <svg class="service-card__link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </span>
+          </article>
+
+          <!-- Service 8: Social Media -->
+          <article class="service-card reveal reveal--up reveal-delay-8" id="service-socialmedia">
+            <span class="service-card__number" aria-hidden="true">08</span>
+            <div class="service-card__media">
+              <img src="assets/media/banner-social2.gif" alt="إدارة السوشيال ميديا" loading="lazy" onerror="this.style.display='none'">
+              <div class="service-card__media-overlay"></div>
+            </div>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/><path d="M2 8c0-2.2.7-4.3 2-6"/><path d="M22 8c0-2.2-.7-4.3-2-6"/></svg>
+            </div>
+            <h3 class="service-card__title">سوشيال ميديا</h3>
+            <p class="service-card__description">إدارة احترافية لمنصات التواصل الاجتماعي تبني مجتمعاً رقمياً نشطاً حول علامتك.</p>
+            <span class="service-card__link">
+              اعرف المزيد
+              <svg class="service-card__link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+         ABOUT SECTION
+         ════════════════════════════════════════ -->
+    <section id="about" class="section about" aria-label="من نحن">
+      <div class="container">
+        <div class="about__wrapper">
+
+          <!-- Text Content -->
+          <div class="about__content reveal reveal--right">
+            <div class="about__tag">
+              <span class="about__tag-line"></span>
+              من نحن
+            </div>
+
+            <h2 class="about__title">
+              نحن <span>بروستار</span><br>
+              شريكك في الفضاء الرقمي
+            </h2>
+
+            <p class="about__text">
+              في بروستار، نؤمن بأن كل علامة تجارية تستحق أن تتألق كنجم في سماء العالم الرقمي. 
+              فريقنا من المبدعين والخبراء يعمل بشغف لتحويل رؤيتك إلى واقع رقمي مذهل.
+              نجمع بين الإبداع والتكنولوجيا لنقدم حلولاً رقمية متكاملة تنقل أعمالك إلى المستوى التالي.
+            </p>
+
+            <div class="about__stats">
+              <div class="about__stat reveal reveal--up reveal-delay-1">
+                <div class="about__stat-number" data-count="150" data-suffix="+">0</div>
+                <div class="about__stat-label">مشروع منجز</div>
+              </div>
+              <div class="about__stat reveal reveal--up reveal-delay-2">
+                <div class="about__stat-number" data-count="80" data-suffix="+">0</div>
+                <div class="about__stat-label">عميل سعيد</div>
+              </div>
+              <div class="about__stat reveal reveal--up reveal-delay-3">
+                <div class="about__stat-number" data-count="5" data-suffix="+">0</div>
+                <div class="about__stat-label">سنوات خبرة</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual Side -->
+          <div class="about__visual reveal reveal--left">
+            <div class="about__visual-glow" aria-hidden="true"></div>
+            <div class="about__visual-card">
+              <img src="assets/logo.png" alt="Pro-Star Team" style="padding: 2rem; object-fit: contain; background: linear-gradient(135deg, #0C0C24, #14143A);">
+            </div>
+            <div class="about__visual-float-1" aria-hidden="true">
+              <div class="about__visual-float-icon">🎨</div>
+              <div class="about__visual-float-text">تصميم إبداعي</div>
+            </div>
+            <div class="about__visual-float-2" aria-hidden="true">
+              <div class="about__visual-float-icon">🚀</div>
+              <div class="about__visual-float-text">نمو سريع</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+         PORTFOLIO SECTION
+         ════════════════════════════════════════ -->
+    <section id="portfolio" class="section section--alt" aria-label="أعمالنا">
+      <div class="container">
+        <div class="section-title reveal reveal--up">
+          <h2>أعمالنا</h2>
+          <p class="section-subtitle">نماذج من مشاريعنا التي نفتخر بها</p>
+        </div>
+
+        <div class="portfolio__filters reveal reveal--up reveal-delay-1">
+          <button class="portfolio__filter active" data-filter="all">الكل</button>
+          <button class="portfolio__filter" data-filter="uiux">UI/UX</button>
+          <button class="portfolio__filter" data-filter="graphic">جرافيك</button>
+          <button class="portfolio__filter" data-filter="motion">موشن</button>
+          <button class="portfolio__filter" data-filter="web">برمجة</button>
+          <button class="portfolio__filter" data-filter="social">سوشيال</button>
+        </div>
+
+        <div class="portfolio__grid">
+          <!-- Portfolio Item 1 -->
+          <div class="portfolio__item reveal reveal--scale reveal-delay-1" data-category="uiux">
+            <div class="portfolio__item-bg">🎨</div>
+            <div class="portfolio__item-overlay">
+              <span class="portfolio__item-tag">UI/UX</span>
+              <h4 class="portfolio__item-title">تطبيق متجر إلكتروني</h4>
+              <p class="portfolio__item-desc">تصميم واجهة مستخدم كاملة لمتجر إلكتروني</p>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 2 -->
+          <div class="portfolio__item reveal reveal--scale reveal-delay-2" data-category="graphic">
+            <div class="portfolio__item-bg">✨</div>
+            <div class="portfolio__item-overlay">
+              <span class="portfolio__item-tag">تصميم جرافيك</span>
+              <h4 class="portfolio__item-title">هوية بصرية متكاملة</h4>
+              <p class="portfolio__item-desc">تصميم هوية بصرية لشركة تقنية</p>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 3 -->
+          <div class="portfolio__item reveal reveal--scale reveal-delay-3" data-category="motion">
+            <div class="portfolio__item-bg">🎬</div>
+            <div class="portfolio__item-overlay">
+              <span class="portfolio__item-tag">موشن جرافيك</span>
+              <h4 class="portfolio__item-title">فيديو ترويجي</h4>
+              <p class="portfolio__item-desc">فيديو موشن جرافيك لحملة تسويقية</p>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 4 -->
+          <div class="portfolio__item reveal reveal--scale reveal-delay-4" data-category="web">
+            <div class="portfolio__item-bg">💻</div>
+            <div class="portfolio__item-overlay">
+              <span class="portfolio__item-tag">برمجة</span>
+              <h4 class="portfolio__item-title">منصة تعليمية</h4>
+              <p class="portfolio__item-desc">تطوير منصة تعليمية إلكترونية متكاملة</p>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 5 -->
+          <div class="portfolio__item reveal reveal--scale reveal-delay-5" data-category="social">
+            <div class="portfolio__item-bg">📱</div>
+            <div class="portfolio__item-overlay">
+              <span class="portfolio__item-tag">سوشيال ميديا</span>
+              <h4 class="portfolio__item-title">حملة سوشيال ميديا</h4>
+              <p class="portfolio__item-desc">إدارة حملة تسويقية على منصات التواصل</p>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 6 -->
+          <div class="portfolio__item reveal reveal--scale reveal-delay-6" data-category="uiux">
+            <div class="portfolio__item-bg">📊</div>
+            <div class="portfolio__item-overlay">
+              <span class="portfolio__item-tag">UI/UX</span>
+              <h4 class="portfolio__item-title">لوحة تحكم ذكية</h4>
+              <p class="portfolio__item-desc">تصميم داشبورد لتحليل البيانات</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+         CONTACT SECTION
+         ════════════════════════════════════════ -->
+    <section id="contact" class="section" aria-label="تواصل معنا">
+      <div class="container">
+        <div class="section-title reveal reveal--up">
+          <h2>تواصل معنا</h2>
+          <p class="section-subtitle">جاهزون لنأخذ مشروعك إلى النجوم. تواصل معنا الآن!</p>
+        </div>
+
+        <div class="contact__wrapper">
+
+          <!-- Info Side -->
+          <div class="contact__info reveal reveal--right">
+            <h3 class="contact__info-title">
+              لنبدأ رحلة <span>النجاح</span> معاً
+            </h3>
+            <p class="contact__info-text">
+              سواء كنت تبحث عن تصميم هوية بصرية، تطوير موقع إلكتروني، أو حملة تسويقية متكاملة — فريقنا جاهز لمساعدتك.
+            </p>
+
+            <div class="contact__channels">
+              <div class="contact__channel">
+                <div class="contact__channel-icon">
+                  <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <div class="contact__channel-label">البريد الإلكتروني</div>
+                  <div class="contact__channel-value">info@prostar.sa</div>
+                </div>
+              </div>
+
+              <div class="contact__channel">
+                <div class="contact__channel-icon">
+                  <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                </div>
+                <div>
+                  <div class="contact__channel-label">الهاتف</div>
+                  <div class="contact__channel-value" dir="ltr">+966 XX XXX XXXX</div>
+                </div>
+              </div>
+
+              <div class="contact__channel">
+                <div class="contact__channel-icon">
+                  <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <div class="contact__channel-label">الموقع</div>
+                  <div class="contact__channel-value">المملكة العربية السعودية</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Side -->
+          <div class="contact__form-card reveal reveal--left">
+            <form id="contact-form" novalidate>
+              <div class="form__group">
+                <label class="form__label" for="name">الاسم الكامل</label>
+                <input class="form__input" type="text" id="name" name="name" placeholder="أدخل اسمك" required aria-required="true">
+                <span class="form__error" role="alert"></span>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="email">البريد الإلكتروني</label>
+                <input class="form__input" type="email" id="email" name="email" placeholder="example@email.com" required aria-required="true" dir="ltr">
+                <span class="form__error" role="alert"></span>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="phone">رقم الهاتف</label>
+                <input class="form__input" type="tel" id="phone" name="phone" placeholder="+966 5XX XXX XXXX" dir="ltr">
+                <span class="form__error" role="alert"></span>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="service">الخدمة المطلوبة</label>
+                <select class="form__select" id="service" name="service" required aria-required="true">
+                  <option value="">اختر الخدمة</option>
+                  <option value="uiux">تصميم UI/UX</option>
+                  <option value="seo">تحسين محركات البحث SEO</option>
+                  <option value="graphic">تصميم جرافيك</option>
+                  <option value="motion">موشن جرافيك</option>
+                  <option value="programming">البرمجة والتطوير</option>
+                  <option value="content">صناعة المحتوى</option>
+                  <option value="mediabuyer">ميديا باير</option>
+                  <option value="socialmedia">سوشيال ميديا</option>
+                </select>
+                <span class="form__error" role="alert"></span>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="message">رسالتك</label>
+                <textarea class="form__textarea" id="message" name="message" placeholder="اكتب رسالتك هنا..." required aria-required="true"></textarea>
+                <span class="form__error" role="alert"></span>
+              </div>
+
+              <button type="submit" class="form__submit">
+                🚀 أرسل رسالتك
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════════════════
+       FOOTER
+       ════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__top">
+
+        <!-- Brand -->
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <img src="assets/logo.png" alt="Pro-Star" width="40" height="40">
+            <span>Pro-Star</span>
+          </div>
+          <p>نجمك حين يضيع الاتجاه. وكالة تسويق رقمي وتصميم إبداعي متكاملة في المملكة العربية السعودية.</p>
+
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="تويتر">
+              <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="انستقرام">
+              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="لينكد إن">
+              <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 2a2 2 0 110 4 2 2 0 010-4z"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="سناب شات">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer__column">
+          <h4 class="footer__heading">روابط سريعة</h4>
+          <nav class="footer__links" aria-label="روابط سريعة">
+            <a href="#hero" class="footer__link">الرئيسية</a>
+            <a href="#services" class="footer__link">خدماتنا</a>
+            <a href="#about" class="footer__link">من نحن</a>
+            <a href="#portfolio" class="footer__link">أعمالنا</a>
+            <a href="#contact" class="footer__link">تواصل معنا</a>
+          </nav>
+        </div>
+
+        <!-- Services -->
+        <div class="footer__column">
+          <h4 class="footer__heading">خدماتنا</h4>
+          <nav class="footer__links" aria-label="خدماتنا">
+            <a href="#service-uiux" class="footer__link">تصميم UI/UX</a>
+            <a href="#service-seo" class="footer__link">تحسين SEO</a>
+            <a href="#service-graphic" class="footer__link">تصميم جرافيك</a>
+            <a href="#service-motion" class="footer__link">موشن جرافيك</a>
+            <a href="#service-programming" class="footer__link">البرمجة</a>
+            <a href="#service-content" class="footer__link">صناعة المحتوى</a>
+            <a href="#service-mediabuyer" class="footer__link">ميديا باير</a>
+            <a href="#service-socialmedia" class="footer__link">سوشيال ميديا</a>
+          </nav>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <span>© <span id="year"></span> Pro-Star. جميع الحقوق محفوظة.</span>
+        <span>صُنع بـ ❤️ في المملكة العربية السعودية</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="العودة للأعلى">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <!-- Dynamic Year -->
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+  <!-- Main Script -->
+  <script type="module" src="./js/main.js"></script>
+
+</body>
+</html>

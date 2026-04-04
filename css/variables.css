@@ -1,0 +1,101 @@
+/* ============================================
+   Pro-Star KSA — Design Tokens
+   ============================================ */
+
+:root {
+  /* ── Brand Colors ── */
+  --color-primary: #E8621C;
+  --color-primary-light: #FF8A4C;
+  --color-primary-dark: #C04A10;
+  --color-primary-glow: rgba(232, 98, 28, 0.4);
+  --color-accent: #FFB347;
+  --color-accent-glow: rgba(255, 179, 71, 0.3);
+
+  /* ── Space Theme ── */
+  --color-bg-deep: #060614;
+  --color-bg-surface: #0C0C24;
+  --color-bg-elevated: #14143A;
+  --color-bg-card: rgba(14, 14, 42, 0.7);
+  --color-star-white: #E8E8FF;
+  --color-nebula: #1A0A2E;
+  --color-nebula-glow: rgba(26, 10, 46, 0.6);
+
+  /* ── Glass ── */
+  --glass-bg: rgba(12, 12, 36, 0.65);
+  --glass-border: rgba(232, 98, 28, 0.15);
+  --glass-blur: 20px;
+
+  /* ── Text ── */
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #B0B0D0;
+  --color-text-muted: #6060A0;
+  --color-text-accent: #FF8A4C;
+
+  /* ── Typography ── */
+  --font-arabic: 'Tajawal', 'Segoe UI', sans-serif;
+  --font-english: 'Inter', 'Segoe UI', sans-serif;
+
+  --text-xs: clamp(0.7rem, 0.65rem + 0.25vw, 0.8rem);
+  --text-sm: clamp(0.8rem, 0.75rem + 0.3vw, 0.95rem);
+  --text-base: clamp(0.95rem, 0.85rem + 0.4vw, 1.1rem);
+  --text-lg: clamp(1.1rem, 1rem + 0.5vw, 1.35rem);
+  --text-xl: clamp(1.3rem, 1.1rem + 0.8vw, 1.8rem);
+  --text-2xl: clamp(1.6rem, 1.3rem + 1.2vw, 2.4rem);
+  --text-3xl: clamp(2rem, 1.5rem + 2vw, 3.2rem);
+  --text-4xl: clamp(2.5rem, 1.8rem + 3vw, 4.5rem);
+  --text-hero: clamp(3rem, 2rem + 4vw, 6rem);
+
+  /* ── Spacing ── */
+  --space-2xs: 0.125rem;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+  --space-5xl: 8rem;
+
+  /* ── Layout ── */
+  --container-max: 1280px;
+  --container-wide: 1440px;
+  --navbar-height: 72px;
+  --section-padding: clamp(3rem, 5vw, 7rem);
+
+  /* ── Border Radius ── */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
+
+  /* ── Shadows ── */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 30px var(--color-primary-glow);
+  --shadow-glow-lg: 0 0 60px var(--color-primary-glow);
+
+  /* ── Animation ── */
+  --ease-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-instant: 100ms;
+  --duration-fast: 200ms;
+  --duration-normal: 400ms;
+  --duration-slow: 800ms;
+  --duration-slower: 1200ms;
+
+  /* ── Z-Index ── */
+  --z-back: -1;
+  --z-base: 1;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-navbar: 500;
+  --z-overlay: 800;
+  --z-modal: 900;
+  --z-toast: 1000;
+}

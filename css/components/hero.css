@@ -1,0 +1,344 @@
+/* ============================================
+   Pro-Star KSA — Hero Section
+   ============================================ */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: var(--navbar-height);
+}
+
+/* ── Starfield Canvas ── */
+.hero__starfield {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+/* ── Cosmic Background Effects ── */
+.hero__nebula {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero__nebula::before {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  right: -10%;
+  top: 10%;
+  background: radial-gradient(circle, rgba(232, 98, 28, 0.12) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: morph 20s infinite ease-in-out;
+  filter: blur(60px);
+}
+
+.hero__nebula::after {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: 5%;
+  bottom: 10%;
+  background: radial-gradient(circle, rgba(26, 10, 46, 0.3) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: morph 25s infinite ease-in-out reverse;
+  filter: blur(80px);
+}
+
+/* ── Orbit Rings ── */
+.hero__orbits {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero__orbit-ring {
+  position: absolute;
+  border: 1px solid rgba(232, 98, 28, 0.06);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero__orbit-ring:nth-child(1) {
+  width: 400px; height: 400px;
+  animation: rotate 60s linear infinite;
+}
+
+.hero__orbit-ring:nth-child(2) {
+  width: 650px; height: 650px;
+  animation: rotate-reverse 80s linear infinite;
+  border-style: dashed;
+  opacity: 0.5;
+}
+
+.hero__orbit-ring:nth-child(3) {
+  width: 900px; height: 900px;
+  animation: rotate 100s linear infinite;
+  opacity: 0.3;
+}
+
+/* Orbiting dots */
+.hero__orbit-dot {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0 0 10px var(--color-primary-glow);
+}
+
+.hero__orbit-dot:nth-child(4) {
+  animation: orbit 15s linear infinite;
+}
+
+.hero__orbit-dot:nth-child(5) {
+  animation: orbit 22s linear infinite reverse;
+  --orbit-radius: 180px;
+  background: var(--color-accent);
+  width: 4px;
+  height: 4px;
+}
+
+/* ── Content ── */
+.hero__content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  max-width: 900px;
+  padding: var(--space-xl);
+}
+
+.hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-xs) var(--space-lg);
+  background: rgba(232, 98, 28, 0.1);
+  border: 1px solid rgba(232, 98, 28, 0.25);
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  color: var(--color-primary-light);
+  margin-bottom: var(--space-xl);
+  animation: pulse-glow 3s infinite;
+}
+
+.hero__badge-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  animation: pulse-subtle 1.5s infinite;
+}
+
+.hero__title {
+  font-size: var(--text-hero);
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: var(--space-lg);
+  color: var(--color-text-primary);
+}
+
+.hero__title-accent {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero__description {
+  font-size: var(--text-xl);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-2xl);
+  max-width: 650px;
+  margin-inline: auto;
+  line-height: 1.8;
+}
+
+/* ── CTA Buttons ── */
+.hero__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-weight: 700;
+  border-radius: var(--radius-full);
+  transition: all var(--duration-normal) var(--ease-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn--primary {
+  padding: var(--space-md) var(--space-2xl);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  color: white;
+  font-size: var(--text-lg);
+  box-shadow: var(--shadow-glow);
+}
+
+.btn--primary::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent), var(--color-primary));
+  background-size: 200% 200%;
+  animation: gradient-shift 3s ease infinite;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity var(--duration-normal);
+}
+
+.btn--primary:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-glow-lg);
+  color: white;
+}
+
+.btn--primary:hover::before {
+  opacity: 1;
+}
+
+.btn--ghost {
+  padding: var(--space-md) var(--space-2xl);
+  background: transparent;
+  color: var(--color-text-primary);
+  font-size: var(--text-lg);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(232, 98, 28, 0.4);
+  transform: translateY(-2px);
+  color: var(--color-primary-light);
+}
+
+/* ── GIF/Media Area ── */
+.hero__media {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.25;
+}
+
+.hero__media img,
+.hero__media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ── Floating Astronaut SVG ── */
+.hero__astronaut {
+  position: absolute;
+  z-index: 2;
+  right: 5%;
+  bottom: 15%;
+  width: 200px;
+  height: 200px;
+  opacity: 0.15;
+  animation: float-slow 8s infinite ease-in-out;
+  pointer-events: none;
+}
+
+/* ── Scroll Indicator ── */
+.hero__scroll {
+  position: absolute;
+  bottom: var(--space-2xl);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--color-text-muted);
+  font-size: var(--text-xs);
+  animation: float 3s infinite;
+  cursor: pointer;
+}
+
+.hero__scroll-mouse {
+  width: 24px;
+  height: 38px;
+  border: 2px solid var(--color-text-muted);
+  border-radius: 12px;
+  position: relative;
+}
+
+.hero__scroll-mouse::after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 8px;
+  background: var(--color-primary);
+  border-radius: var(--radius-full);
+  animation: float 1.5s infinite;
+}
+
+/* ── Responsive ── */
+@media (max-width: 991px) {
+  .hero__orbit-ring:nth-child(3) { display: none; }
+  .hero__astronaut { width: 150px; height: 150px; }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    min-height: 100svh;
+    padding-top: calc(var(--navbar-height) + var(--space-xl));
+  }
+
+  .hero__content {
+    padding: var(--space-md);
+  }
+
+  .hero__title {
+    font-size: var(--text-3xl);
+  }
+
+  .hero__description {
+    font-size: var(--text-base);
+  }
+
+  .hero__orbit-ring { display: none; }
+  .hero__orbit-dot { display: none; }
+  .hero__astronaut { display: none; }
+
+  .hero__actions {
+    flex-direction: column;
+  }
+
+  .btn--primary, .btn--ghost {
+    width: 100%;
+    justify-content: center;
+    padding: var(--space-md) var(--space-xl);
+  }
+}
