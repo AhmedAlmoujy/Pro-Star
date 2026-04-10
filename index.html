@@ -35,7 +35,19 @@
       </a>
 
       <nav class="navbar__nav" role="navigation" aria-label="القائمة الرئيسية">
-        <a href="#services" class="navbar__link" aria-label="خدماتنا">خدماتنا</a>
+        <div class="navbar__dropdown">
+          <a href="#services" class="navbar__link" aria-label="خدماتنا">خدماتنا <svg class="navbar__dropdown-arrow" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
+          <div class="navbar__dropdown-menu">
+            <a href="service-uiux.html"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>تصميم UI/UX</a>
+            <a href="service-seo.html"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>تحسين SEO</a>
+            <a href="service-graphic.html"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>تصميم جرافيك</a>
+            <a href="service-motion.html"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>موشن جرافيك</a>
+            <a href="service-programming.html"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>البرمجة والتطوير</a>
+            <a href="service-content.html"><svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>صناعة المحتوى</a>
+            <a href="service-mediabuyer.html"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>ميديا باير</a>
+            <a href="service-socialmedia.html"><svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>سوشيال ميديا</a>
+          </div>
+        </div>
         <a href="#about" class="navbar__link" aria-label="من نحن">من نحن</a>
         <a href="#portfolio" class="navbar__link" aria-label="أعمالنا">أعمالنا</a>
         <a href="#contact" class="navbar__link" aria-label="تواصل معنا">تواصل معنا</a>
@@ -158,10 +170,10 @@
             </div>
             <h3 class="service-card__title">تصميم UI/UX</h3>
             <p class="service-card__description">نصمم واجهات مستخدم بديهية وتجارب رقمية استثنائية تحول الزوار إلى عملاء مخلصين.</p>
-            <span class="service-card__link">
+            <a href="service-uiux.html" class="service-card__link">
               اعرف المزيد
               <svg class="service-card__link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-            </span>
+            </a>
           </article>
 
           <!-- Service 2: SEO -->
@@ -176,10 +188,10 @@
             </div>
             <h3 class="service-card__title">تحسين محركات البحث SEO</h3>
             <p class="service-card__description">نضع موقعك في صدارة نتائج البحث عبر استراتيجيات SEO متقدمة ومحتوى محسّن.</p>
-            <span class="service-card__link">
+            <a href="service-seo.html" class="service-card__link">
               اعرف المزيد
               <svg class="service-card__link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-            </span>
+            </a>
           </article>
 
           <!-- Service 3: Graphic Design -->
@@ -194,10 +206,10 @@
             </div>
             <h3 class="service-card__title">تصميم جرافيك</h3>
             <p class="service-card__description">هويات بصرية مميزة وتصاميم إبداعية تعكس شخصية علامتك التجارية بأسلوب احترافي.</p>
-            <span class="service-card__link">
+            <a href="service-graphic.html" class="service-card__link">
               اعرف المزيد
               <svg class="service-card__link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-            </span>
+            </a>
           </article>
 
           <!-- Service 4: Motion -->
@@ -212,10 +224,10 @@
             </div>
             <h3 class="service-card__title">موشن جرافيك</h3>
             <p class="service-card__description">فيديوهات متحركة احترافية تروي قصة علامتك التجارية بأسلوب مرئي جذاب ومؤثر.</p>
-            <span class="service-card__link">
+            <a href="service-motion.html" class="service-card__link">
               اعرف المزيد
               <svg class="service-card__link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-            </span>
+            </a>
           </article>
 
           <!-- Service 5: Programming -->
@@ -230,10 +242,10 @@
             </div>
             <h3 class="service-card__title">البرمجة والتطوير</h3>
             <p class="service-card__description">مواقع وتطبيقات ويب متطورة بأحدث التقنيات مع أداء عالٍ وتجربة مستخدم سلسة.</p>
-            <span class="service-card__link">
+            <a href="service-programming.html" class="service-card__link">
               اعرف المزيد
               <svg class="service-card__link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-            </span>
+            </a>
           </article>
 
           <!-- Service 6: Content -->
@@ -248,10 +260,10 @@
             </div>
             <h3 class="service-card__title">صناعة المحتوى</h3>
             <p class="service-card__description">محتوى إبداعي ومؤثر يبني علاقة حقيقية بين علامتك وجمهورك المستهدف.</p>
-            <span class="service-card__link">
+            <a href="service-content.html" class="service-card__link">
               اعرف المزيد
               <svg class="service-card__link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-            </span>
+            </a>
           </article>
 
           <!-- Service 7: Media Buyer -->
@@ -266,10 +278,10 @@
             </div>
             <h3 class="service-card__title">ميديا باير</h3>
             <p class="service-card__description">إدارة حملات إعلانية ذكية تحقق أقصى عائد على الاستثمار بأقل تكلفة ممكنة.</p>
-            <span class="service-card__link">
+            <a href="service-mediabuyer.html" class="service-card__link">
               اعرف المزيد
               <svg class="service-card__link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-            </span>
+            </a>
           </article>
 
           <!-- Service 8: Social Media -->
@@ -284,10 +296,10 @@
             </div>
             <h3 class="service-card__title">سوشيال ميديا</h3>
             <p class="service-card__description">إدارة احترافية لمنصات التواصل الاجتماعي تبني مجتمعاً رقمياً نشطاً حول علامتك.</p>
-            <span class="service-card__link">
+            <a href="service-socialmedia.html" class="service-card__link">
               اعرف المزيد
               <svg class="service-card__link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-            </span>
+            </a>
           </article>
 
         </div>
@@ -594,14 +606,14 @@
         <div class="footer__column">
           <h4 class="footer__heading">خدماتنا</h4>
           <nav class="footer__links" aria-label="خدماتنا">
-            <a href="#service-uiux" class="footer__link">تصميم UI/UX</a>
-            <a href="#service-seo" class="footer__link">تحسين SEO</a>
-            <a href="#service-graphic" class="footer__link">تصميم جرافيك</a>
-            <a href="#service-motion" class="footer__link">موشن جرافيك</a>
-            <a href="#service-programming" class="footer__link">البرمجة</a>
-            <a href="#service-content" class="footer__link">صناعة المحتوى</a>
-            <a href="#service-mediabuyer" class="footer__link">ميديا باير</a>
-            <a href="#service-socialmedia" class="footer__link">سوشيال ميديا</a>
+            <a href="service-uiux.html" class="footer__link">تصميم UI/UX</a>
+            <a href="service-seo.html" class="footer__link">تحسين SEO</a>
+            <a href="service-graphic.html" class="footer__link">تصميم جرافيك</a>
+            <a href="service-motion.html" class="footer__link">موشن جرافيك</a>
+            <a href="service-programming.html" class="footer__link">البرمجة</a>
+            <a href="service-content.html" class="footer__link">صناعة المحتوى</a>
+            <a href="service-mediabuyer.html" class="footer__link">ميديا باير</a>
+            <a href="service-socialmedia.html" class="footer__link">سوشيال ميديا</a>
           </nav>
         </div>
 

@@ -146,7 +146,7 @@
   margin-bottom: var(--space-lg);
 }
 
-/* Card CTA */
+/* Card CTA — stretched link makes entire card clickable */
 .service-card__link {
   display: inline-flex;
   align-items: center;
@@ -155,6 +155,19 @@
   font-weight: 600;
   color: var(--color-primary);
   transition: all var(--duration-fast);
+  text-decoration: none;
+}
+
+/* Stretch the link to cover the entire card */
+.service-card__link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.service-card:hover .service-card__link {
+  color: var(--color-primary-light);
 }
 
 .service-card__link-arrow {

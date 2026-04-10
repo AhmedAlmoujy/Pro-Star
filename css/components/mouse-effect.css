@@ -1,0 +1,56 @@
+/* ============================================
+   Mouse Effect / Custom Cursor
+   ============================================ */
+
+.mouse-cursor,
+.mouse-cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  border-radius: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  transition: width 0.3s, height 0.3s, background-color 0.3s, opacity 0.3s;
+}
+
+.mouse-cursor {
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--color-primary);
+  background-color: rgba(232, 98, 28, 0.1);
+  margin: -18px 0 0 -18px;
+  backdrop-filter: blur(2px);
+  opacity: 0.8;
+}
+
+.mouse-cursor-dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-primary);
+  margin: -3px 0 0 -3px;
+}
+
+/* Hover States */
+.mouse-cursor--hover {
+  width: 60px;
+  height: 60px;
+  margin: -30px 0 0 -30px;
+  background-color: rgba(232, 98, 28, 0.2);
+  border-color: rgba(232, 98, 28, 0.5);
+}
+
+.mouse-cursor-dot--hover {
+  opacity: 0;
+}
+
+/* Hide default cursor globally on non-touch devices if desired, 
+   but usually it's better to keep it or just hide it on the body */
+@media (pointer: fine) {
+  /* body {
+    cursor: none;
+  }
+  a, button, input, select, textarea {
+    cursor: none;
+  } */
+}

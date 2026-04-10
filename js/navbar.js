@@ -88,6 +88,21 @@ export function initNavbar() {
     }
   });
 
+  // ── Mobile Dropdown Toggle ──
+  const dropdowns = document.querySelectorAll('.navbar__dropdown');
+  dropdowns.forEach(dropdown => {
+    const trigger = dropdown.querySelector('.navbar__link');
+    if (trigger) {
+      trigger.addEventListener('click', (e) => {
+        // Only toggle on mobile
+        if (window.innerWidth <= 991) {
+          e.preventDefault();
+          dropdown.classList.toggle('open');
+        }
+      });
+    }
+  });
+
   // Initial state
   handleScroll();
 }
