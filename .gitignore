@@ -7,3 +7,4 @@ dist/
 
 assets/media/*.gif
 .vercel
+.vite
