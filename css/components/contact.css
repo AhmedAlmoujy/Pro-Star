@@ -86,6 +86,13 @@
   font-size: var(--text-base);
   font-weight: 600;
   color: var(--color-text-primary);
+  text-decoration: none;
+  transition: color var(--duration-fast);
+}
+
+a.contact__channel-value:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
 }
 
 /* ── Form Side ── */

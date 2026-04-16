@@ -198,7 +198,9 @@
   transform: translateX(-4px);
 }
 
-.navbar__dropdown-menu a svg {
+.navbar__dropdown-menu a svg,
+.navbar__dropdown-menu a img {
+    object-fit: contain;
   width: 18px;
   height: 18px;
   fill: none;
