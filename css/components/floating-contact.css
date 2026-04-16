@@ -1,115 +1,131 @@
 /* ============================================
-   Floating Contact Component
+   Floating Contact Component — Premium Edition
    ============================================ */
+
+:root {
+  --fab-size: 60px;
+  --fab-gap: 12px;
+}
 
 .floating-contact {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 40px;
+  right: 32px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  z-index: var(--z-toast);
+  gap: var(--fab-gap);
+  z-index: 2147483647; /* Maximum possible z-index */
   pointer-events: none;
+  filter: drop-shadow(0 0 20px rgba(232, 98, 28, 0.2));
 }
 
 .floating-contact__btn {
   pointer-events: auto;
-  width: 56px;
-  height: 56px;
-  border-radius: var(--radius-full);
+  width: var(--fab-size);
+  height: var(--fab-size);
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  background: var(--glass-bg);
-  border: 1px solid var(--glass-border);
-  backdrop-filter: blur(var(--glass-blur));
-  color: var(--color-text-primary);
-  box-shadow: var(--shadow-md);
-  transition: all var(--duration-normal) var(--ease-out-expo);
-  position: relative;
-  overflow: visible;
+  background: rgba(12, 12, 36, 0.85); /* Deep space glass */
+  border: 2px solid rgba(232, 98, 28, 0.2);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  color: #FFFFFF;
+  transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  animation: fab-float 6s infinite ease-in-out;
 }
 
-.floating-contact__btn svg {
-  width: 24px;
-  height: 24px;
-  stroke: var(--color-primary);
-  stroke-width: 2;
-  transition: transform var(--duration-fast) var(--ease-smooth);
+.floating-contact__btn svg,
+.floating-contact__btn [data-lucide] {
+  width: 28px !important;
+  height: 28px !important;
+  stroke: #E8621C !important;
+  stroke-width: 2 !important;
+  transition: transform 0.3s ease;
 }
 
+/* Specific styling for WhatsApp */
+.floating-contact__btn--whatsapp {
+  border-color: rgba(37, 211, 102, 0.3);
+  animation-delay: 0.5s;
+}
+
+.floating-contact__btn--whatsapp svg,
+.floating-contact__btn--whatsapp [data-lucide] {
+  stroke: #25D366 !important;
+}
+
+/* Hover States */
 .floating-contact__btn:hover {
-  transform: translateY(-5px) scale(1.1);
-  border-color: var(--color-primary);
-  box-shadow: 0 0 20px var(--color-primary-glow);
-  color: var(--color-primary);
+  transform: translateY(-8px) scale(1.1);
+  background: #0C0C24;
+  border-color: #E8621C;
+  box-shadow: 0 12px 32px rgba(232, 98, 28, 0.3);
+}
+
+.floating-contact__btn--whatsapp:hover {
+  border-color: #25D366;
+  box-shadow: 0 12px 32px rgba(37, 211, 102, 0.3);
 }
 
 .floating-contact__btn:hover svg {
-  transform: rotate(10deg);
+  transform: scale(1.1) rotate(5deg);
 }
 
-/* Tooltip appearance */
-.floating-contact__btn::before {
+/* Tooltips */
+.floating-contact__btn::after {
   content: attr(data-tooltip);
   position: absolute;
   right: calc(100% + 15px);
-  background: var(--color-bg-surface);
-  color: var(--color-text-primary);
-  padding: 6px 12px;
-  border-radius: var(--radius-sm);
-  font-size: var(--text-xs);
+  background: #0C0C24;
+  color: #FFFFFF;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
   white-space: nowrap;
   opacity: 0;
   visibility: hidden;
   transform: translateX(10px);
-  transition: all var(--duration-fast) var(--ease-smooth);
-  border: 1px solid var(--glass-border);
-  box-shadow: var(--shadow-sm);
-  pointer-events: none;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(232, 98, 28, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
-.floating-contact__btn:hover::before {
+.floating-contact__btn:hover::after {
   opacity: 1;
   visibility: visible;
   transform: translateX(0);
 }
 
-/* Specific styling for WhatsApp */
-.floating-contact__btn--whatsapp:hover {
-  border-color: #25D366;
-  box-shadow: 0 0 20px rgba(37, 211, 102, 0.4);
+/* Animations */
+@keyframes fab-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
 
-.floating-contact__btn--whatsapp:hover svg {
-  stroke: #25D366;
-}
-
-/* Entrance Animation */
-@keyframes fab-in {
-  from {
-    opacity: 0;
-    transform: translateY(30px) scale(0.8);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-.floating-contact__btn {
-  animation: fab-in var(--duration-slow) var(--ease-out-expo) backwards;
-}
-
-.floating-contact__btn:nth-child(1) { animation-delay: 100ms; }
-.floating-contact__btn:nth-child(2) { animation-delay: 200ms; }
-
-/* Desktop adjustment */
-@media (min-width: 1024px) {
+/* Mobile Adjustments */
+@media (max-width: 768px) {
   .floating-contact {
-    bottom: 40px;
-    right: 40px;
+    bottom: 30px;
+    right: 20px;
+    gap: 10px;
+  }
+  
+  .floating-contact__btn {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .floating-contact__btn svg {
+    width: 24px !important;
+    height: 24px !important;
+  }
+  
+  .floating-contact__btn::after {
+    display: none; /* Hide tooltips on mobile */
   }
 }
