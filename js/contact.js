@@ -1,12 +1,12 @@
 /* ============================================
-   Pro-Star KSA — Contact Form
+   Pro-Star KSA — Contact Form (Supabase)
    ============================================ */
+
+import { supabase } from './supabase.js';
 
 export function initContact() {
   const form = document.getElementById('contact-form');
   if (!form) return;
-
-  const FORMSPREE_URL = 'https://formspree.io/f/YOUR_FORM_ID'; // Replace with your Formspree endpoint
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -19,20 +19,22 @@ export function initContact() {
     submitBtn.disabled = true;
 
     try {
-      const formData = new FormData(form);
-      const response = await fetch(FORMSPREE_URL, {
-        method: 'POST',
-        body: formData,
-        headers: { 'Accept': 'application/json' }
-      });
+      const { error } = await supabase
+        .from('contact_submissions')
+        .insert({
+          name: form.querySelector('#name').value.trim(),
+          email: form.querySelector('#email').value.trim(),
+          phone: form.querySelector('#phone').value.trim() || null,
+          service: form.querySelector('#service').value,
+          message: form.querySelector('#message').value.trim(),
+        });
 
-      if (response.ok) {
-        showToast('تم إرسال رسالتك بنجاح! سنتواصل معك قريباً ✨', 'success');
-        form.reset();
-      } else {
-        throw new Error('فشل الإرسال');
-      }
+      if (error) throw error;
+
+      showToast('تم إرسال رسالتك بنجاح! سنتواصل معك قريباً ✨', 'success');
+      form.reset();
     } catch (err) {
+      console.error('Supabase error:', err);
       showToast('حدث خطأ أثناء الإرسال. يرجى المحاولة مرة أخرى.', 'error');
     } finally {
       submitBtn.textContent = originalText;
