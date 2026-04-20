@@ -219,6 +219,22 @@
   opacity: 1;
 }
 
+.btn--secondary {
+  padding: var(--space-md) var(--space-2xl);
+  background: transparent;
+  color: var(--color-primary-light);
+  font-size: var(--text-lg);
+  border: 2px solid var(--color-primary);
+  box-shadow: 0 0 20px rgba(232, 98, 28, 0.15);
+}
+
+.btn--secondary:hover {
+  background: rgba(232, 98, 28, 0.1);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-glow);
+  color: white;
+}
+
 .btn--ghost {
   padding: var(--space-md) var(--space-2xl);
   background: transparent;
@@ -336,7 +352,7 @@
     flex-direction: column;
   }
 
-  .btn--primary, .btn--ghost {
+  .btn--primary, .btn--secondary, .btn--ghost {
     width: 100%;
     justify-content: center;
     padding: var(--space-md) var(--space-xl);

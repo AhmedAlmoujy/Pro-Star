@@ -19,6 +19,7 @@ export default defineConfig({
         content: resolve(__dirname, 'service-content.html'),
         mediabuyer: resolve(__dirname, 'service-mediabuyer.html'),
         socialmedia: resolve(__dirname, 'service-socialmedia.html'),
+        profile: resolve(__dirname, 'profile.html'),
       }
     }
   },

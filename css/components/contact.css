@@ -194,7 +194,7 @@ a.contact__channel-value:hover {
   font-weight: 700;
   font-family: var(--font-arabic);
   border: none;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-full);
   cursor: pointer;
   transition: all var(--duration-normal);
   box-shadow: var(--shadow-glow);
