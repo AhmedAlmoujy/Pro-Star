@@ -3,40 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="??????? - ???? ????? ???????. ????? ?????? ????? ???? ????? ?????? ??? ?????? ???????.">
-  <meta name="keywords" content="????? ?????, ????? ?????, ????? ????????, ???????, ????????">
+  <meta name="description" content="Pro-Star - خدمة صناعة المحتوى لكتابة رسائل قوية ومحتوى منظم يخدم الهوية ويقنع الجمهور.">
+  <meta name="keywords" content="صناعة المحتوى, كتابة محتوى, محتوى تسويقي, كتابة إعلانية, استراتيجية محتوى">
   <meta name="author" content="Pro-Star KSA">
-  <meta property="og:title" content="Pro-Star | ????? ???????">
-  <meta property="og:description" content="????? ?????? ????? ???? ????? ?????? ?? ??????">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Pro-Star | صناعة المحتوى">
+  <meta property="og:description" content="نكتب محتوى واضحًا ومؤثرًا يعبّر عن العلامة ويقود الجمهور إلى التفاعل">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ar_SA">
-  <title>Pro-Star | ????? ???????</title>
+  <title>Pro-Star | صناعة المحتوى</title>
   <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/components/animations.css">
+  <link rel="stylesheet" href="./css/components/navbar.css">
+  <link rel="stylesheet" href="./css/components/mouse-effect.css">
+  <link rel="stylesheet" href="./css/components/service-page.css">
+  <link rel="stylesheet" href="./css/components/footer.css">
 </head>
 <body>
   <header class="navbar" role="banner">
     <div class="navbar__inner">
-      <a href="index.html" class="navbar__logo"><img src="assets/logo.png" alt="Pro-Star Logo" width="44" height="44"><span class="navbar__logo-text">Pro-Star</span></a>
+      <a href="index.html" class="navbar__logo" aria-label="الصفحة الرئيسية Pro-Star">
+        <img src="assets/logo.png" alt="Pro-Star Logo" width="44" height="44">
+        <span class="navbar__logo-text">Pro-Star</span>
+      </a>
       <nav class="navbar__nav" role="navigation">
         <div class="navbar__dropdown">
-          <a href="index.html#services" class="navbar__link">??????? <svg class="navbar__dropdown-arrow" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
+          <a href="index.html#services" class="navbar__link">خدماتنا <svg class="navbar__dropdown-arrow" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
           <div class="navbar__dropdown-menu">
-            <a href="service-uiux.html"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>????? UI/UX</a>
-            <a href="service-seo.html"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>????? SEO</a>
-            <a href="service-graphic.html"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>????? ??????</a>
-            <a href="service-motion.html"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>???? ??????</a>
-            <a href="service-programming.html"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>??????? ????????</a>
-            <a href="service-content.html"><svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>????? ???????</a>
-            <a href="service-mediabuyer.html"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>????? ????</a>
-            <a href="service-socialmedia.html"><svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>?????? ?????</a>
+            <a href="service-uiux.html"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>تصميم UI/UX</a>
+            <a href="service-seo.html"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>تحسين SEO</a>
+            <a href="service-graphic.html"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>تصميم جرافيك</a>
+            <a href="service-motion.html"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>موشن جرافيك</a>
+            <a href="service-programming.html"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>البرمجة والتطوير</a>
+            <a href="service-content.html"><svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>صناعة المحتوى</a>
+            <a href="service-mediabuyer.html"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>ميديا باير</a>
+            <a href="service-socialmedia.html"><svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>سوشيال ميديا</a>
           </div>
         </div>
-        <a href="index.html#about" class="navbar__link">?? ???</a>
-        <a href="index.html#portfolio" class="navbar__link">???????</a>
-        <a href="index.html#contact" class="navbar__link">????? ????</a>
-        <a href="index.html#contact" class="navbar__cta"> ???? ??????</a>
+        <a href="index.html#about" class="navbar__link">من نحن</a>
+        <a href="index.html#portfolio" class="navbar__link">أعمالنا</a>
+        <a href="index.html#contact" class="navbar__link">تواصل معنا</a>
+        <a href="index.html#contact" class="navbar__cta">ابدأ مشروعك</a>
       </nav>
-      <button class="navbar__hamburger" aria-label="??? ???????" aria-expanded="false"><span></span><span></span><span></span></button>
+      <button class="navbar__hamburger" aria-label="فتح القائمة" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
     <div class="navbar__mobile-overlay" aria-hidden="true"></div>
   </header>
@@ -44,15 +59,21 @@
   <main>
     <section class="service-hero" id="service-hero">
       <div class="service-hero__image">
-        <img src="assets/Images/Content1.png" alt="????? ??????? - ???? ???? ?? ????? ???????">
+        <img src="assets/Images/Content1.png" alt="صناعة المحتوى">
         <div class="service-hero__overlay"></div>
       </div>
-      <nav class="sp-breadcrumb"><a href="index.html">????????</a><span class="sp-breadcrumb__sep">?</span><a href="index.html#services">???????</a><span class="sp-breadcrumb__sep">?</span><span class="sp-breadcrumb__current">????? ???????</span></nav>
+      <nav class="sp-breadcrumb" aria-label="مسار التصفح">
+        <a href="index.html">الرئيسية</a>
+        <span class="sp-breadcrumb__sep">‹</span>
+        <a href="index.html#services">خدماتنا</a>
+        <span class="sp-breadcrumb__sep">‹</span>
+        <span class="sp-breadcrumb__current">صناعة المحتوى</span>
+      </nav>
       <div class="service-hero__content">
-        <div class="service-hero__badge reveal reveal--up"><span class="service-hero__badge-dot"></span>????? ???????</div>
-        <h1 class="service-hero__title reveal reveal--up reveal-delay-1">????? ???????</h1>
-        <p class="service-hero__subtitle reveal reveal--up reveal-delay-2">????? ?????? ????? ???? ????? ?????? ??? ?????? ???????? ??????? ???????? ????? ???????.</p>
-        <a href="index.html#contact" class="service-hero__cta reveal reveal--up reveal-delay-3">???? ?????? ???? <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        <div class="service-hero__badge reveal reveal--up"><span class="service-hero__badge-dot"></span>محتوى يعبّر ويقنع</div>
+        <h1 class="service-hero__title reveal reveal--up reveal-delay-1">صناعة المحتوى</h1>
+        <p class="service-hero__subtitle reveal reveal--up reveal-delay-2">نصنع محتوى واضحًا ومؤثرًا يترجم شخصية العلامة إلى كلمات ورسائل تساعد على بناء الثقة وتحريك الجمهور.</p>
+        <a href="index.html#contact" class="service-hero__cta reveal reveal--up reveal-delay-3">اطلب محتواك الآن <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
       </div>
       <div class="service-hero__scroll" aria-hidden="true"><div class="service-hero__scroll-line"></div></div>
     </section>
@@ -61,16 +82,16 @@
       <div class="container">
         <div class="sp-overview">
           <div class="sp-overview__text scroll-3d scroll-3d--right">
-            <h2>????? ????<br>?????? ???????</h2>
-            <p>??????? ????? ?? ???? ?? ?????????? ??????? ?????. ???? ????? ????? ???? ?????? ????? ?????? ?????????.</p>
-            <p>?? ???????? ????????? ??? ???? ????????? ????????? ????? � ???? ????? ?????? ??????? ???????.</p>
+            <h2>لماذا تهتم<br>بصناعة المحتوى؟</h2>
+            <p>المحتوى الجيد لا يملأ المساحة فقط، بل يشرح القيمة ويقرب الجمهور من القرار ويمنح العلامة صوتًا واضحًا.</p>
+            <p>نكتب محتوى يخدم أهدافك التسويقية ويجعل الرسالة مفهومة ومقنعة عبر كل القنوات.</p>
           </div>
           <div class="sp-overview__visual scroll-3d scroll-3d--left scroll-3d-delay-2">
             <div class="sp-overview__icon-grid">
-              <div class="sp-overview__icon-item"><div class="sp-overview__icon-item-icon">??</div><span class="sp-overview__icon-item-title">????? ???????</span></div>
-              <div class="sp-overview__icon-item"><div class="sp-overview__icon-item-icon"><i data-lucide="edit"></i></div><span class="sp-overview__icon-item-title">?????? ???????</span></div>
-              <div class="sp-overview__icon-item"><div class="sp-overview__icon-item-icon"><i data-lucide="megaphone"></i></div><span class="sp-overview__icon-item-title">???? ???????</span></div>
-              <div class="sp-overview__icon-item"><div class="sp-overview__icon-item-icon"><i data-lucide="clipboard"></i></div><span class="sp-overview__icon-item-title">??? ?????</span></div>
+              <div class="sp-overview__icon-item"><div class="sp-overview__icon-item-icon"><i data-lucide="pen-tool"></i></div><span class="sp-overview__icon-item-title">رسائل واضحة</span></div>
+              <div class="sp-overview__icon-item"><div class="sp-overview__icon-item-icon"><i data-lucide="edit"></i></div><span class="sp-overview__icon-item-title">كتابة احترافية</span></div>
+              <div class="sp-overview__icon-item"><div class="sp-overview__icon-item-icon"><i data-lucide="megaphone"></i></div><span class="sp-overview__icon-item-title">محتوى تسويقي</span></div>
+              <div class="sp-overview__icon-item"><div class="sp-overview__icon-item-icon"><i data-lucide="clipboard"></i></div><span class="sp-overview__icon-item-title">خطة محتوى</span></div>
             </div>
           </div>
         </div>
@@ -80,15 +101,15 @@
     <section class="sp-section sp-section--alt" id="features">
       <div class="container">
         <div class="sp-features">
-          <h2 class="sp-features__title scroll-3d">????? ???????</h2>
-          <p class="sp-features__subtitle scroll-3d scroll-3d-delay-1">????? ????? ????? ?? ?????? ?????????</p>
+          <h2 class="sp-features__title scroll-3d">ما الذي نقدمه</h2>
+          <p class="sp-features__subtitle scroll-3d scroll-3d-delay-1">محتوى منظم يخدم العلامة والمبيعات معًا</p>
           <div class="sp-features__grid">
-            <div class="sp-feature-card scroll-3d scroll-3d--flip scroll-3d-delay-1"><div class="sp-feature-card__icon"><i data-lucide="newspaper"></i></div><h3 class="sp-feature-card__title">?????? SEO</h3><p class="sp-feature-card__desc">?????? ?????? ??????? ????? ???? ?????? ??????? ??????.</p></div>
-            <div class="sp-feature-card scroll-3d scroll-3d--flip scroll-3d-delay-2"><div class="sp-feature-card__icon"><i data-lucide="smartphone"></i></div><h3 class="sp-feature-card__title">????? ??????</h3><p class="sp-feature-card__desc">?????? ????? ????? ?????? ??????? ?????????.</p></div>
-            <div class="sp-feature-card scroll-3d scroll-3d--flip scroll-3d-delay-3"><div class="sp-feature-card__icon"><i data-lucide="mail"></i></div><h3 class="sp-feature-card__title">????? ??????</h3><p class="sp-feature-card__desc">????? ???? ???????? ???? ?????? ??? ?????? ?????.</p></div>
-            <div class="sp-feature-card scroll-3d scroll-3d--flip scroll-3d-delay-1"><div class="sp-feature-card__icon"><i data-lucide="clapperboard"></i></div><h3 class="sp-feature-card__title">???????? ?????</h3><p class="sp-feature-card__desc">???? ????? ???????? ?????? ???????? ????????? ?????.</p></div>
-            <div class="sp-feature-card scroll-3d scroll-3d--flip scroll-3d-delay-2"><div class="sp-feature-card__icon"><i data-lucide="file-text"></i></div><h3 class="sp-feature-card__title">????? ???????</h3><p class="sp-feature-card__desc">???? ??????? ?????? ?????? ????? ?????? ??? ?????.</p></div>
-            <div class="sp-feature-card scroll-3d scroll-3d--flip scroll-3d-delay-3"><div class="sp-feature-card__icon"><i data-lucide="bar-chart-2"></i></div><h3 class="sp-feature-card__title">?????? ???????</h3><p class="sp-feature-card__desc">????? ????? ???? ?????? ????? ?? ?????.</p></div>
+            <div class="sp-feature-card scroll-3d scroll-3d--flip scroll-3d-delay-1"><div class="sp-feature-card__icon"><i data-lucide="type"></i></div><h3 class="sp-feature-card__title">كتابة الهوية</h3><p class="sp-feature-card__desc">صياغة نبرة ورسائل تعكس شخصية العلامة بوضوح واتساق.</p></div>
+            <div class="sp-feature-card scroll-3d scroll-3d--flip scroll-3d-delay-2"><div class="sp-feature-card__icon"><i data-lucide="file-text"></i></div><h3 class="sp-feature-card__title">محتوى المواقع</h3><p class="sp-feature-card__desc">كتابة صفحات تعريفية وخدمية تقنع الزائر وتوجهه بوضوح.</p></div>
+            <div class="sp-feature-card scroll-3d scroll-3d--flip scroll-3d-delay-3"><div class="sp-feature-card__icon"><i data-lucide="scroll-text"></i></div><h3 class="sp-feature-card__title">محتوى الحملات</h3><p class="sp-feature-card__desc">كتابة نصوص إعلانية ورسائل ترويجية تركز على النتائج.</p></div>
+            <div class="sp-feature-card scroll-3d scroll-3d--flip scroll-3d-delay-1"><div class="sp-feature-card__icon"><i data-lucide="calendar-range"></i></div><h3 class="sp-feature-card__title">خطة محتوى</h3><p class="sp-feature-card__desc">تنظيم الأفكار والمواضيع في خطة عملية قابلة للتنفيذ.</p></div>
+            <div class="sp-feature-card scroll-3d scroll-3d--flip scroll-3d-delay-2"><div class="sp-feature-card__icon"><i data-lucide="languages"></i></div><h3 class="sp-feature-card__title">صياغة مرنة</h3><p class="sp-feature-card__desc">تكييف المحتوى حسب المنصة والجمهور والهدف المطلوب.</p></div>
+            <div class="sp-feature-card scroll-3d scroll-3d--flip scroll-3d-delay-3"><div class="sp-feature-card__icon"><i data-lucide="sparkles"></i></div><h3 class="sp-feature-card__title">تحسين الرسالة</h3><p class="sp-feature-card__desc">مراجعة المحتوى وتطويره ليكون أوضح وأقوى وأكثر إقناعًا.</p></div>
           </div>
         </div>
       </div>
@@ -97,13 +118,13 @@
     <section class="sp-section" id="process">
       <div class="container">
         <div class="sp-process">
-          <h2 class="sp-process__title scroll-3d">???? ????? ???????</h2>
-          <p class="sp-process__subtitle scroll-3d scroll-3d-delay-1">?? ?????? ??? ????? ????????</p>
+          <h2 class="sp-process__title scroll-3d">خطواتنا</h2>
+          <p class="sp-process__subtitle scroll-3d scroll-3d-delay-1">من الفكرة إلى رسالة مكتوبة باحتراف</p>
           <div class="sp-process__timeline">
-            <div class="sp-step scroll-3d scroll-3d--right scroll-3d-delay-1"><div class="sp-step__number">1</div><div class="sp-step__content"><h3 class="sp-step__title">?????????? ???????</h3><p class="sp-step__desc">??? ??? ????? ????? ?????? ?? ?????? ??????? ????????.</p></div></div>
-            <div class="sp-step scroll-3d scroll-3d--right scroll-3d-delay-2"><div class="sp-step__number">2</div><div class="sp-step__content"><h3 class="sp-step__title">????? ????????</h3><p class="sp-step__desc">???? ?? ???????? ???????? ????????? ????? ????? ???????.</p></div></div>
-            <div class="sp-step scroll-3d scroll-3d--right scroll-3d-delay-3"><div class="sp-step__number">3</div><div class="sp-step__content"><h3 class="sp-step__title">??????? ?????????</h3><p class="sp-step__desc">???? ????? ???? ?????? ??????? ????? ????? ????????.</p></div></div>
-            <div class="sp-step scroll-3d scroll-3d--right scroll-3d-delay-4"><div class="sp-step__number">4</div><div class="sp-step__content"><h3 class="sp-step__title">????? ????????</h3><p class="sp-step__desc">???? ??????? ????? ?????? ?????? ???????????? ????????.</p></div></div>
+            <div class="sp-step scroll-3d scroll-3d--right scroll-3d-delay-1"><div class="sp-step__number">1</div><div class="sp-step__content"><h3 class="sp-step__title">فهم العلامة</h3><p class="sp-step__desc">نراجع النشاط والجمهور والأهداف ونبرة التواصل المناسبة.</p></div></div>
+            <div class="sp-step scroll-3d scroll-3d--right scroll-3d-delay-2"><div class="sp-step__number">2</div><div class="sp-step__content"><h3 class="sp-step__title">بناء الرسالة</h3><p class="sp-step__desc">نصيغ الفكرة الرئيسية ونحدد أسلوب الخطاب ونقاط الإقناع.</p></div></div>
+            <div class="sp-step scroll-3d scroll-3d--right scroll-3d-delay-3"><div class="sp-step__number">3</div><div class="sp-step__content"><h3 class="sp-step__title">الكتابة والمراجعة</h3><p class="sp-step__desc">نكتب المحتوى ونراجعه لضبط اللغة والوضوح والانسيابية.</p></div></div>
+            <div class="sp-step scroll-3d scroll-3d--right scroll-3d-delay-4"><div class="sp-step__number">4</div><div class="sp-step__content"><h3 class="sp-step__title">التسليم والتحسين</h3><p class="sp-step__desc">نسلم المحتوى بصياغة جاهزة ونقترح تحسينات مستمرة عند الحاجة.</p></div></div>
           </div>
         </div>
       </div>
@@ -112,10 +133,10 @@
     <section class="sp-section sp-section--alt">
       <div class="container">
         <div class="sp-stats">
-          <div class="sp-stat scroll-3d scroll-3d-delay-1"><div class="sp-stat__number" data-count="1000" data-suffix="+">0</div><div class="sp-stat__label">???? ?????</div></div>
-          <div class="sp-stat scroll-3d scroll-3d-delay-2"><div class="sp-stat__number" data-count="300" data-suffix="%">0</div><div class="sp-stat__label">????? ?? ???????</div></div>
-          <div class="sp-stat scroll-3d scroll-3d-delay-3"><div class="sp-stat__number" data-count="70" data-suffix="+">0</div><div class="sp-stat__label">???? ??????</div></div>
-          <div class="sp-stat scroll-3d scroll-3d-delay-4"><div class="sp-stat__number" data-count="5" data-suffix="M+">0</div><div class="sp-stat__label">???? ????</div></div>
+          <div class="sp-stat scroll-3d scroll-3d-delay-1"><div class="sp-stat__number" data-count="500" data-suffix="+">0</div><div class="sp-stat__label">قطعة محتوى</div></div>
+          <div class="sp-stat scroll-3d scroll-3d-delay-2"><div class="sp-stat__number" data-count="92" data-suffix="%">0</div><div class="sp-stat__label">وضوح في الرسالة</div></div>
+          <div class="sp-stat scroll-3d scroll-3d-delay-3"><div class="sp-stat__number" data-count="70" data-suffix="+">0</div><div class="sp-stat__label">علامة خدمناها</div></div>
+          <div class="sp-stat scroll-3d scroll-3d-delay-4"><div class="sp-stat__number" data-count="160" data-suffix="%">0</div><div class="sp-stat__label">زيادة في التفاعل</div></div>
         </div>
       </div>
     </section>
@@ -124,11 +145,11 @@
       <div class="container">
         <div class="sp-cta scroll-3d">
           <div class="sp-cta__glow" aria-hidden="true"></div>
-          <h2 class="sp-cta__title">???? ?????? <span>???? ??????</span>?</h2>
-          <p class="sp-cta__desc">???? ???? ??? ???? ?????? ????????</p>
+          <h2 class="sp-cta__title">جاهز تبني رسالة <span>أقوى</span>؟</h2>
+          <p class="sp-cta__desc">خلنا نكتب محتوى يخدم علامتك ويقرب جمهورك من القرار</p>
           <div class="sp-cta__buttons">
-            <a href="index.html#contact" class="sp-cta__btn sp-cta__btn--primary"> ???? ??????</a>
-            <a href="index.html#portfolio" class="sp-cta__btn sp-cta__btn--ghost">???? ???????</a>
+            <a href="index.html#contact" class="sp-cta__btn sp-cta__btn--primary">ابدأ الآن</a>
+            <a href="index.html#portfolio" class="sp-cta__btn sp-cta__btn--ghost">شاهد الأعمال</a>
           </div>
         </div>
       </div>
@@ -138,88 +159,37 @@
   <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer__top">
-        <div class="footer__brand"><div class="footer__brand-logo"><img src="assets/logo.png" alt="Pro-Star" width="40" height="40"><span>Pro-Star</span></div><p>???? ??? ???? ???????. ????? ????? ???? ?????? ?????? ??????? ?? ??????? ??????? ????????.</p>          <div class="footer__social">
-            <a href="https://www.instagram.com/p_star_company?igsh=Ym83MDloa3RlbWx4" class="footer__social-link" aria-label="????????" target="_blank" rel="noopener noreferrer">
-              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
-            </a>
-            <a href="https://www.linkedin.com/company/pstarcompany/" class="footer__social-link" aria-label="????? ??" target="_blank" rel="noopener noreferrer">
-              <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 2a2 2 0 110 4 2 2 0 010-4z"/></svg>
-            </a>
-          </div></div>
-        <div class="footer__column"><h4 class="footer__heading">????? ?????</h4><nav class="footer__links"><a href="index.html" class="footer__link">????????</a><a href="index.html#services" class="footer__link">???????</a><a href="index.html#about" class="footer__link">?? ???</a><a href="index.html#portfolio" class="footer__link">???????</a><a href="index.html#contact" class="footer__link">????? ????</a></nav></div>
-        <div class="footer__column"><h4 class="footer__heading">???????</h4><nav class="footer__links"><a href="service-uiux.html" class="footer__link">????? UI/UX</a><a href="service-seo.html" class="footer__link">????? SEO</a><a href="service-graphic.html" class="footer__link">????? ??????</a><a href="service-motion.html" class="footer__link">???? ??????</a><a href="service-programming.html" class="footer__link">???????</a><a href="service-content.html" class="footer__link">????? ???????</a><a href="service-mediabuyer.html" class="footer__link">????? ????</a><a href="service-socialmedia.html" class="footer__link">?????? ?????</a></nav></div>
+        <div class="footer__brand">
+          <div class="footer__brand-logo"><img src="assets/logo.png" alt="Pro-Star" width="40" height="40"><span>Pro-Star</span></div>
+          <p>نصنع حضورًا رقميًا مؤثرًا. هدفنا تقديم حلول تسويقية وإبداعية تساعدك على النمو بثقة واستمرارية.</p>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/p_star_company?igsh=Ym83MDloa3RlbWx4" class="footer__social-link" aria-label="إنستغرام" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
+            <a href="https://www.linkedin.com/company/pstarcompany/" class="footer__social-link" aria-label="لينكد إن" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 2a2 2 0 110 4 2 2 0 010-4z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer__column"><h4 class="footer__heading">روابط مهمة</h4><nav class="footer__links"><a href="index.html" class="footer__link">الرئيسية</a><a href="index.html#services" class="footer__link">خدماتنا</a><a href="index.html#about" class="footer__link">من نحن</a><a href="index.html#portfolio" class="footer__link">أعمالنا</a><a href="index.html#contact" class="footer__link">تواصل معنا</a></nav></div>
+        <div class="footer__column"><h4 class="footer__heading">الخدمات</h4><nav class="footer__links"><a href="service-uiux.html" class="footer__link">تصميم UI/UX</a><a href="service-seo.html" class="footer__link">تحسين SEO</a><a href="service-graphic.html" class="footer__link">تصميم جرافيك</a><a href="service-motion.html" class="footer__link">موشن جرافيك</a><a href="service-programming.html" class="footer__link">البرمجة</a><a href="service-content.html" class="footer__link">صناعة المحتوى</a><a href="service-mediabuyer.html" class="footer__link">ميديا باير</a><a href="service-socialmedia.html" class="footer__link">سوشيال ميديا</a></nav></div>
       </div>
-      <div class="footer__bottom"><span>� <span id="year"></span> Pro-Star. ???? ?????? ??????.</span><span>???? ?? <i data-lucide="heart"></i> ?? ??????? ??????? ????????</span></div>
+      <div class="footer__bottom"><span>© <span id="year"></span> Pro-Star. جميع الحقوق محفوظة.</span><span>صنع بـ <i data-lucide="heart"></i> في المملكة العربية السعودية</span></div>
     </div>
   </footer>
-  <button class="back-to-top" aria-label="?????? ??????"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg></button>
+
+  <button class="back-to-top" aria-label="العودة للأعلى"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg></button>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   <script type="module" src="./js/service-main.js"></script>
-  
-  
-
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>lucide.createIcons();</script>
-
-  
-
-
-  <!-- Start Floating Contact -->
   <style>
-    .pro-fab {
-      position: fixed !important;
-      bottom: 40px !important;
-      right: 30px !important;
-      display: flex !important;
-      flex-direction: column !important;
-      gap: 15px !important;
-      z-index: 99999999 !important;
-      pointer-events: none !important;
-    }
-    .pro-fab__item {
-      pointer-events: auto !important;
-      width: 60px !important;
-      height: 60px !important;
-      border-radius: 50% !important;
-      display: flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-      background: rgba(12, 12, 36, 0.95) !important;
-      border: 2px solid rgba(232, 98, 28, 0.4) !important;
-      backdrop-filter: blur(20px) !important;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6) !important;
-      transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1) !important;
-    }
-    .pro-fab__item--whatsapp {
-      border-color: rgba(37, 211, 102, 0.4) !important;
-    }
-    .pro-fab__item:hover {
-      transform: translateY(-8px) scale(1.1) !important;
-      border-color: #E8621C !important;
-      box-shadow: 0 15px 40px rgba(232, 98, 28, 0.4) !important;
-    }
-    .pro-fab__item--whatsapp:hover {
-      border-color: #25D366 !important;
-      box-shadow: 0 15px 40px rgba(37, 211, 102, 0.4) !important;
-    }
-    @media (max-width: 768px) {
-      .pro-fab { bottom: 25px !important; right: 20px !important; }
-      .pro-fab__item { width: 52px !important; height: 52px !important; }
-    }
+    .pro-fab { position: fixed !important; bottom: 40px !important; right: 30px !important; display: flex !important; flex-direction: column !important; gap: 15px !important; z-index: 99999999 !important; pointer-events: none !important; }
+    .pro-fab__item { pointer-events: auto !important; width: 60px !important; height: 60px !important; border-radius: 50% !important; display: flex !important; align-items: center !important; justify-content: center !important; background: rgba(12, 12, 36, 0.95) !important; border: 2px solid rgba(232, 98, 28, 0.4) !important; backdrop-filter: blur(20px) !important; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6) !important; transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1) !important; }
+    .pro-fab__item--whatsapp { border-color: rgba(37, 211, 102, 0.4) !important; }
+    .pro-fab__item:hover { transform: translateY(-8px) scale(1.1) !important; border-color: #E8621C !important; box-shadow: 0 15px 40px rgba(232, 98, 28, 0.4) !important; }
+    .pro-fab__item--whatsapp:hover { border-color: #25D366 !important; box-shadow: 0 15px 40px rgba(37, 211, 102, 0.4) !important; }
+    @media (max-width: 768px) { .pro-fab { bottom: 25px !important; right: 20px !important; } .pro-fab__item { width: 52px !important; height: 52px !important; } }
   </style>
   <div class="pro-fab">
-    <a href="tel:115060750" class="pro-fab__item" aria-label="???? ???">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width: 28px; height: 28px; fill: none; stroke: #E8621C; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-    </a>
-    <a href="https://wa.me/966503134362" class="pro-fab__item pro-fab__item--whatsapp" aria-label="??????">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width: 32px; height: 32px; fill: #25D366;"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.7 17.9 69.4 27.3 107.1 27.3 124.7 0 226.2-101.5 226.2-226.2 0-58.5-22.8-113.5-64.6-155.3zm-158 331.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L70.7 349l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.2-8.5-44.2-27.1-16.4-14.6-27.4-32.7-30.6-38.1-3.2-5.5-.3-8.5 2.4-11.2 2.5-2.4 5.5-6.5 8.3-9.7 2.8-3.2 3.7-5.5 5.5-9.2 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.2 5.8 23.5 9.2 31.5 11.8 13.3 4.2 25.5 3.6 35.2 2.2 10.8-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
-    </a>
+    <a href="tel:115060750" class="pro-fab__item" aria-label="اتصل بنا"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width: 28px; height: 28px; fill: none; stroke: #E8621C; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></a>
+    <a href="https://wa.me/966503134362" class="pro-fab__item pro-fab__item--whatsapp" aria-label="واتساب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width: 32px; height: 32px; fill: #25D366;"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.7 17.9 69.4 27.3 107.1 27.3 124.7 0 226.2-101.5 226.2-226.2 0-58.5-22.8-113.5-64.6-155.3zm-158 331.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L70.7 349l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.2-8.5-44.2-27.1-16.4-14.6-27.4-32.7-30.6-38.1-3.2-5.5-.3-8.5 2.4-11.2 2.5-2.4 5.5-6.5 8.3-9.7 2.8-3.2 3.7-5.5 5.5-9.2 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.2 5.8 23.5 9.2 31.5 11.8 13.3 4.2 25.5 3.6 35.2 2.2 10.8-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a>
   </div>
-  <!-- End Floating Contact -->
-
 </body>
 </html>
-
-
-
-
